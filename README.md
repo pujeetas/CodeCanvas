@@ -1,167 +1,79 @@
-🎨 CodeCanvas
-Real-time collaborative whiteboard with integrated chat, built for developers.
+# 🎨 CODECANVAS
 
-CodeCanvas is a WebSocket-powered collaboration platform that allows multiple users to draw on a shared canvas while communicating through real-time chat. The project is designed to demonstrate bidirectional real-time communication, state synchronization, and scalable WebSocket architecture using modern web technologies.
+## Real-Time Collaborative Whiteboard for Developers
 
-🚀 Live Demo
-Coming soon
+> A WebSocket-powered collaboration platform enabling **real-time drawing** and **live chat** with synchronized state across multiple users.
 
-🎯 Overview
-CodeCanvas enables developers to collaborate visually and verbally in real time. It combines a shared drawing canvas with a live chat system, making it suitable for brainstorming, system design discussions, and collaborative planning.
+---
 
-Key objectives of this project:
+## 🚀 Overview
 
-Demonstrate real-time WebSocket communication
+**CodeCanvas** allows multiple developers to collaborate on a shared canvas while chatting in real time.  
+It demonstrates **bidirectional WebSocket communication**, **multi-client state synchronization**, and a **scalable full-stack architecture** built with modern web technologies.
 
-Handle multi-user state synchronization
+---
 
-Build a scalable, modular full-stack architecture
+## ✨ Current Features
 
-Create a polished, developer-focused UI
+### 💬 Real-Time Chat
+- **Instant messaging** via WebSockets
+- **Auto-generated anonymous usernames**
+- **Message timestamps**
+- **Clear visual separation** of sent vs received messages
+- **Live online user count**
+- **Enter key to send messages**
+- **Modern dark mode UI**
 
-✨ Current Features
-💬 Real-Time Chat
+### 🎨 Canvas
+- **HTML5 Canvas API integration**
+- **Full-screen responsive layout**
+- **Dark theme optimized workspace**
 
-Instant messaging using WebSockets
+### 🧠 Architecture
+- **Custom React hooks** for WebSocket management (`useSocket`)
+- **Persistent WebSocket connections** with cleanup
+- **Server acting as a real-time message broker**
+- **Strict TypeScript type safety**
+- **Component-based React architecture**
 
-Auto-generated anonymous usernames
+---
 
-Message timestamps
+## 🛠 Tech Stack
 
-Visual differentiation between sent and received messages
+### 🖥 Frontend
+- **React 19**
+- **TypeScript**
+- **Tailwind CSS**
+- **Socket.io Client**
+- **HTML Canvas API**
 
-Live online user count
+### 🧩 Backend
+- **Node.js**
+- **Express**
+- **Socket.io**
+- **TypeScript**
 
-Press Enter to send messages
+### ⚙ Development Tools
+- **Vite**
+- **ESLint**
 
-Clean, modern dark mode UI
+---
 
-🎨 Canvas
+## 📂 Project Structure
 
-HTML5 Canvas API integration
+```bash
+client/
+ ├── components/
+ ├── hooks/
+ │   └── useSocket.ts
+ ├── pages/
+ ├── styles/
+ └── main.tsx
 
-Full-screen, responsive layout
+server/
+ ├── src/
+ │   ├── index.ts
+ │   ├── socket.ts
+ │   └── types.ts
+ └── tsconfig.json
 
-Dark theme optimized workspace
-
-🧠 Architecture
-
-Custom React hooks for WebSocket management (useSocket)
-
-Persistent WebSocket connections with proper cleanup
-
-Server acting as a real-time message broker
-
-Strong type safety with TypeScript
-
-Modular, component-based architecture
-
-🛠 Tech Stack
-Frontend
-
-React 19
-
-TypeScript
-
-Tailwind CSS
-
-Socket.io Client
-
-HTML Canvas API
-
-Backend
-
-Node.js
-
-Express
-
-Socket.io
-
-TypeScript
-
-Development & Tooling
-
-Vite
-
-ESLint
-
-🔮 Roadmap & Future Scope
-Phase 1: Drawing Functionality (1–2 Weeks)
-
-Mouse-based drawing on canvas
-
-Real-time drawing sync across clients
-
-Drawing tools (pencil, eraser, shapes)
-
-Color picker
-
-Line width controls
-
-Undo / Redo functionality
-
-Phase 2: Enhanced Collaboration (2–3 Weeks)
-
-Live cursor tracking for all users
-
-User presence indicators on canvas
-
-“User is drawing…” status
-
-Typing indicators in chat
-
-Join/leave notifications
-
-Phase 3: Professional Features (1 Month)
-
-Username customization
-
-Persistent boards (MongoDB)
-
-Export canvas as PNG / SVG
-
-Room-based collaboration (private rooms)
-
-Text tool for canvas
-
-Sticky notes
-
-Phase 4: Developer-Specific Tools (2 Months)
-
-Code block tool with syntax highlighting
-
-Pre-built templates (ER diagrams, system design, wireframes)
-
-GitHub integration (create issues from canvas)
-
-Screenshot & share functionality
-
-Markdown support in chat
-
-Phase 5: Production Ready (3 Months)
-
-Authentication (Google / GitHub OAuth)
-
-Private rooms with passwords
-
-Role-based permissions (view-only vs edit)
-
-Version history for boards
-
-Mobile responsiveness
-
-Cloud deployment (Vercel / Railway)
-
-Phase 6: Advanced Features (Future)
-
-Excalidraw integration
-
-Voice chat
-
-Screen sharing
-
-AI-powered diagram suggestions
-
-Team workspaces
-
-Analytics dashboard
