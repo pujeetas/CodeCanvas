@@ -2,14 +2,17 @@
 
 ## Real-Time Collaborative Whiteboard for Developers
 
-> A WebSocket-powered collaboration platform enabling **real-time drawing** and **live chat** with synchronized state across multiple users.
+> 🚧 **This project is actively under development.**  
+> 🚀 **Live demo coming soon.**
+
+A WebSocket-powered collaboration platform enabling **real-time drawing** and **live chat** with synchronized state across multiple users.
 
 ---
 
 ## 🚀 Overview
 
 **CodeCanvas** allows multiple developers to collaborate on a shared canvas while chatting in real time.  
-It demonstrates **bidirectional WebSocket communication**, **multi-client state synchronization**, and a **scalable full-stack architecture** built with modern web technologies.
+It is being built to demonstrate **bidirectional WebSocket communication**, **multi-client state synchronization**, and a **scalable full-stack architecture** using modern web technologies.
 
 ---
 
@@ -76,4 +79,3 @@ server/
  │   ├── socket.ts
  │   └── types.ts
  └── tsconfig.json
-
