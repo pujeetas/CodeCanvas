@@ -7,6 +7,12 @@ type MessageData = {
     time: string
 }
 
+type DrawData = {
+    x: number,
+    y: number,
+    isDrawing: boolean,
+}
+
 export function useSocket  (){
 
     const socketRef = useRef<Socket | null>(null)
@@ -36,5 +42,13 @@ export function useSocket  (){
         socketRef.current?.on("online-count", callback);
     }
 
-    return {joinChat, sendMessage, onMessage, onlineUsers}
+    const receiveDraw = (callback : (coords : DrawData) => void) => {
+        socketRef.current?.on("draw", callback)
+    }
+
+    const emitDraw = (data : DrawData) => {
+        socketRef.current?.emit("draw", data)
+    }
+
+    return {joinChat, sendMessage, onMessage, onlineUsers , receiveDraw, emitDraw}
 }

@@ -21,7 +21,6 @@ function ChatRoom() {
     setSendMsg("");
   }
 
-  // Handle Enter key
   const handleKeyPress = (e: React.KeyboardEvent) => {
     if (e.key === "Enter" && !e.shiftKey) {
       e.preventDefault();

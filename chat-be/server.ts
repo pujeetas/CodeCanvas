@@ -43,6 +43,10 @@ io.on("connection", (socket) => {
     io.emit("online-count", onlineUsers);
     console.log(`User disconnected. Online: ${onlineUsers}`);
   });
+
+  socket.on("draw", (data ) => {
+    socket.broadcast.emit("draw", data)
+  })
 });
 
 server.listen(3000, () => {
